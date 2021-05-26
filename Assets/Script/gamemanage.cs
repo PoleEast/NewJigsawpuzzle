@@ -5,14 +5,18 @@ using UnityEngine;
 public class gamemanage : MonoBehaviour
 {
     public int TouchTime;
+    private int touchTime=0;
     //if you win the number will = -1 
     private int Win=0;
    //compute win need how much
     private int winKey; 
     private Control[] alljudge;
+    private AudioSource music;
     // Start is called before the first frame update
     void Start()
     {   
+        music=GameObject.FindWithTag("music").GetComponent<AudioSource>();
+
         winKey=GetComponentInChildren<CutPicture>().Mode;
         TouchTime=0;
         alljudge =GameObject.FindWithTag("GameController").GetComponentsInChildren<Control>();
@@ -33,6 +37,12 @@ public class gamemanage : MonoBehaviour
                 Win=-1;
                 Debug.Log("Win");
             }
+        }
+        //music control
+        if(touchTime!=TouchTime)
+        {
+            music.Play();
+            touchTime=TouchTime;
         }
     }
 }

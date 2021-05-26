@@ -40,7 +40,7 @@
      <Compile Include="Assets\Script\Point.cs" />
      <Compile Include="Assets\Script\gamemanage.cs" />
      <Compile Include="Assets\Script\Control.cs" />
-     <Compile Include="Assets\Script\UI_Start.cs" />
+     <Compile Include="Assets\Script\musiccontrol.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.0a16/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
