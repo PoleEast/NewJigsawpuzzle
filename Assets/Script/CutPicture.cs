@@ -22,7 +22,6 @@ public class CutPicture : MonoBehaviour
             for (int j = Mode - 1; j >= 0; j--)
             {
                 number--;
-                Random rng=new Random();
                 string name;
                 if(i==1&&j==1)
                     name="holo";
