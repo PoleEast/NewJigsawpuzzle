@@ -55,6 +55,8 @@
     },
     "git.ignoreLimitWarning": true,
     "files.associations": {
-        "Untitled-1.C": "cpp"
+        "Untitled-1.C": "cpp",
+        "KEY3.C": "cpp",
+        "LCDNUMBER.C": "cpp"
     }
 }

@@ -7,6 +7,7 @@ TagManager:
   - holo
   - IMG
   - music
+  - log
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: GG_UI
+    uniqueID: 3130532933
+    locked: 0
+  - name: UI
+    uniqueID: 840438125
     locked: 0

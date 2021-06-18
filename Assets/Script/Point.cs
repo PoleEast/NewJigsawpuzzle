@@ -1,15 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Point : MonoBehaviour
 {
+    private Text Font;
+    [HideInInspector]
+    public int touchTime;
     // Update is called once per frame
+    void Start()
+    {
+        Font = this.GetComponent<Text>();
+    }
     void Update()
     {
-        var touchTime=GameObject.FindWithTag("Player").GetComponent<gamemanage>().TouchTime;
-        var font=this.GetComponent<Text>();
-        font.text="分數:"+touchTime.ToString();
+        Font.text = "分數:" + touchTime.ToString();
     }
 }
